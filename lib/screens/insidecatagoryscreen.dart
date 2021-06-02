@@ -14,7 +14,7 @@ class Insidecatagoryscreen extends StatelessWidget {
     String id = routeargs['id'] as String;
     String title = routeargs['name'] as String;
     final mealstodisplay = DUMMY_MEALS.where((element) {
-      return element.categories.contains(id);
+      return element.categories.contains(id); //return
     }).toList();
     return Scaffold(
       appBar: AppBar(
